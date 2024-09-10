@@ -1,0 +1,20 @@
+{
+    "name": "Java 8 Development Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "java-app",
+    // "build": {
+    //     "dockerfile": "Dockerfile",
+    //     "context": ".."
+    // },
+    "customizations": {
+        "vscode": {
+            "terminal.integrated.shell.linux": "/bin/sh",
+            "java.home": "/usr/local/openjdk-8",
+            "extensions": [
+                "vscjava.vscode-java-pack"
+            ]
+        }
+    },
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace/demo"
+}
